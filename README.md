@@ -1,5 +1,15 @@
 # Knusperli
 
+## Notes on this repository
+
+This is a modified Knusperli that does not depend on Bazel to build - it's just a simple Makefile. Just run `make`.
+
+This was motivated by the headache and pain in the arse that is to build Bazel on a Cygwin environment. There are hardcoded paths for binaries on Bazel's source for things like Python and the JDK. Python is not always installed as a binary named python.exe and the JDK does not need to reside in Program Files, among others. Also it seems like a big dependency for such a small project.
+
+lodepng sources have been included as well.
+
+## Introduction
+
 The goal of Knusperli is to reduce blocking artifacts in decoded JPEG images, by
 interpreting quantized DCT coefficients in the image data as an interval, rather
 than a fixed value, and choosing the value from that interval that minimizes
