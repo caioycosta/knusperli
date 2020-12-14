@@ -2,7 +2,7 @@
 
 ## Notes on this repository
 
-This is a modified Knusperli that does not depend on Bazel to build - it's just a simple Makefile. Just run `make`.
+This is a modified Knusperli that does not depend on Bazel to build - it's just a simple Makefile. Just run `make`. Binary will be named `a.exe` or `a.out` depending on your platform.
 
 This was motivated by the headache and pain in the arse that is to build Bazel on a Cygwin environment. There are hardcoded paths for binaries on Bazel's source for things like Python and the JDK. Python is not always installed as a binary named python.exe and the JDK does not need to reside in Program Files, among others. Also it seems like a big dependency for such a small project.
 
